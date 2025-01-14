@@ -61,7 +61,7 @@ pytz==2023.3
 PyYAML==6.0.1
 redis==4.4.4
 requests==2.31.0
-setuptools==65.5.1
+setuptools==70.0.0
 six==1.16.0
 SQLAlchemy==1.4.52
 sqlparse==0.4.4
