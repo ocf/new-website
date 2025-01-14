@@ -78,7 +78,9 @@
                 </div>
 
 
-                <h3>Regular Weekly Hours</h3>
+		<h3>Regular Weekly Hours</h3>
+		<button class = "btn btn-primary" id = "weekly_hours_btn" onclick="toggle_weekly_hours()" style="opacity:0.3;">Show</button>
+		<div id = "weekly_hours" style="display:none;">
                 <p>The regular OCF hours are:</p>
                 <div class="row">
                     <div class="col-sm-12">
@@ -94,6 +96,7 @@
                         </table>
                     </div>
                 </div>
+		</div>
 
                 {% if holidays %}
                     <h3 id="holidays">Holidays</h3>
@@ -142,4 +145,19 @@
             </video>
         </div>
     </div>
+
+    <script>
+	function toggle_weekly_hours() {
+		var change = document.getElementById("weekly_hours_btn");
+		if (change.innerHTML == "Show")
+		{
+			change.innerHTML = "Hide";
+			$("#weekly_hours").show();
+		}
+		else {
+			change.innerHTML = "Show";
+			$("#weekly_hours").hide();
+		}
+	}
+    </script>
 {% endblock %}
