@@ -51,7 +51,7 @@ pycryptodomex==3.19
 PyGithub==1.58.2
 Pygments==2.15.1
 PyJWT==2.7.0
-PyMySQL==1.0.2
+PyMySQL==1.1.1
 PyNaCl==1.5.0
 pyparsing==2.4.7
 pysmi==0.3.4
