@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="ocf-content-block">
+        <p>
+            This table lists all desktops and whether they have been upgraded to NixOS.
+        </p>
+
+    </div>
+
+    <table class="table">
+        {% for server in servers %}
+            <tr {% if server.status == upgraded %}
+                style="background-color: #d3ffd3;"
+              {% elif server.status == blocked %}
+                style="background-color: #ffd3d3;"
+              {% endif %}>
+                <th>
+                    {{server.host.hostname}}
+                    {% if server.has_dev %}
+                        <br />
+                        dev-{{server.host.hostname}}
+                    {% endif %}
+                </th>
+                <td>
+                    {{server.host.description}}
+                    {% if server.comments %}
+                        <div style="background-color: #fffed3;">
+                            <strong>Comments:</strong> {{server.comments}}
+                        </div>
+                    {% endif %}
+                </td>
+                <th>
+                    {% if server.status == upgraded %}
+                        Done!
+                    {% elif server.status == blocked %}
+                        Blocked
+                    {% endif %}
+                </th>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
