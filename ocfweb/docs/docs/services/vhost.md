@@ -83,7 +83,7 @@ accounts belonging to UC Berkeley faculty, and the faculty and academic staff
 of associated institutions which are listed in our
 [[eligibility policy | doc membership/eligibility]]. Each account may have at
 most one virtual host, but you are free to set up external domains which redirect
-to it. Faculty and academic staff are not eligible for mail hosting for their
+to it (see [Google Domains Help][domain-forwarding] for an example). Faculty and academic staff are not eligible for mail hosting for their
 individual accounts, as mail hosting is intended for mailing lists or group
 accounts. Furthermore, virtual hosts for faculty and staff will only be
 approved if they have already obtained a domain name from their department or
@@ -92,11 +92,12 @@ restrictions. While we are happy to host personal websites for faculty and
 staff, we will not manage their DNS, nor provide mailing lists for individual
 accounts.
 
+[domain-forwarding]: https://support.google.com/domains/answer/4522141#forwarddomain
 
-### Limitations on non-berkeley.edu
+### Limitations on non-berkeley.edu domains
 
-The OCF may host non-berkeley.edu domains, however the process is more
-complicated in this case. At the discretion of an OCF (Deputy) Site Manager,
+The OCF may host non-berkeley.edu domains (e.g. 'foobarbaz.com'); however, the process is more
+complicated in such cases. At the discretion of an OCF (Deputy) Site Manager,
 permission may be granted to those who can demonstrate a specific need for the
 OCF to host a website outside of the berkeley.edu domain. For such domains, the
 account holder must:
@@ -107,14 +108,12 @@ account holder must:
 2.  Pay any and all fees and/or obtain permissions relating to obtaining and
     maintaining a domain name.
 
-Here are some cases where it would be appropriate
-for the OCF to host a non-berkeley.edu domain: when hosting a student group
-website which was previously hosted at a non-berkeley.edu address, a website
-for a department or University-affiliated research group that requires a
-particular domain, or the personal website of a faculty or staff member.
+The OCF has considered hosting non-berkeley.edu domains when: a student group
+website was previously hosted at a non-berkeley.edu address, a website
+for a department or University-affiliated research group required a
+particular domain, & the personal website of a faculty or staff member needed a home.
 Domains under berkeley.edu may not redirect to a non-berkeley.edu domain (see
 **no off-site hosting**).
-
 
 ### University policies
 
