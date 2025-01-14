@@ -70,4 +70,4 @@ urllib3<2
 vine==5.1.0
 wcwidth==0.2.5
 wrapt==1.12.1
-zipp==3.5.0
+zipp==3.19.1
