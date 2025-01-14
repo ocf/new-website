@@ -1,6 +1,6 @@
 cached-property
 celery[redis]
-cryptography<39.0.2 # Due to Rust requirements (ok to remove once rustc is puppeted or we just install Rust in the container)
+cryptography<43.0.2 # Due to Rust requirements (ok to remove once rustc is puppeted or we just install Rust in the container)
 django
 django-bootstrap-form
 django-ipware

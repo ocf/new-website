@@ -13,7 +13,7 @@ click-didyoumean==0.0.3
 click-plugins==1.1.1
 click-repl==0.2.0
 cracklib==2.9.6
-cryptography==40.0.2
+cryptography==43.0.1
 cycler==0.10.0
 Deprecated==1.2.13
 Django==3.2.19
