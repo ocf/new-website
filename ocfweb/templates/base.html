@@ -61,9 +61,19 @@
 
                         <li><a href="{% url 'staff-hours' %}">Staff Hours</a></li>
                         <li><a href="{% url 'docs' %}">Help</a></li>
-                        <li><a href="{% url 'doc' 'contact' %}">
-                                Contact <span class="hidden-sm">Us</span>
-                        </a></li>
+                          
+                        <li class="dropdown">                              
+                            <a href="{% url 'doc' 'contact' %}" class="dropdown-toggle" data-toggle="dropdown">
+                                Contact <span class="hidden-sm">Us</span> <span class="caret"></span>
+                            </a>                              
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{% url 'contact/irc' %}">Internet Relay Chat (IRC)</a></li>
+                                <li><a href="{% url 'contact/slack' %}">Slack</a></li>                              
+                            </ul>
+                        </li>                              
+                          
+
 
                         {% if user %}
                             <li class="dropdown">
